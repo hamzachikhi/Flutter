@@ -1,21 +1,31 @@
-void main() { 
-  // The main function where the program starts
-  // الدالة الرئيسية التي يبدأ منها تنفيذ البرنامج
+void main() {
+  // هنا كنعلنو على المتغير height اللي غادي نخزنو فيه الطول ديال الشخص فالمتر
+  double height = 1.78;
 
-  double height = 1.75; // meters
-  // Declare a variable for height in meters
-  // تعريف متغير للطول بالمتر
+  // هنا كنعلنو على المتغير weight اللي غادي نخزنو فيه الوزن ديال الشخص فالكيلوغرام
+  double weight = 125;
 
-  double weight = 70; // kilograms
-  // Declare a variable for weight in kilograms
-  // تعريف متغير للوزن بالكيلوغرام
-
+  // هنا كنحسبو مؤشر كتلة الجسم BMI باستعمال المعادلة: الوزن ÷ (الطول × الطول)
   double bmi = weight / (height * height);
-  // Calculate BMI using the formula
-  // حساب مؤشر كتلة الجسم باستخدام المعادلة
 
-  print('Your BMI is: $bmi');
-  // Print the BMI value to the console
-  // طباعة قيمة مؤشر كتلة الجسم في وحدة الإخراج (الكونسول)
+  // هنا كنطبعو النتيجة ديال BMI فالكونسول
+  print("مؤشر كتلة الجسم (BMI) هو: $bmi");
 }
 
+
+void main() {
+  // هنا عرفنا متغير سميتو fullName فيه الاسم الشخصي والعائلي ديالك
+  String fullName = "Mohammed Ali";
+
+  // هنا كنطبعو عدد الحروف اللي كاينين فالنص
+  print("الطول: ${fullName.length}");
+
+  // هنا كنحوّلو النص كامل لحروف كبيرة (Upper Case)
+  print("حروف كبيرة: ${fullName.toUpperCase()}");
+
+  // هنا كنحوّلو النص كامل لحروف صغيرة (Lower Case)
+  print("حروف صغيرة: ${fullName.toLowerCase()}");
+
+  // هنا كنشوفو واش النص فيه الكلمة "Ali" أو لا، وكنطبعو النتيجة (true أو false)
+  print("هل يحتوي على 'Ali'؟ ${fullName.contains('Ali')}");
+}
